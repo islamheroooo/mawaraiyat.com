@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ماورائيات | Mawaraiyat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/favicon.png">
+</head>
+<body class="bg-gray-900 text-white scroll-smooth">
+
+  <!-- Hero -->
+  <header class="relative flex items-center justify-center h-[90vh]">
+    <img src="banner.jpg" alt="Portal" class="absolute inset-0 w-full h-full object-cover opacity-40">
+    <div class="relative z-10 text-center max-w-xl">
+      <h1 class="text-5xl font-bold mb-4">ماورائيات</h1>
+      <p class="text-xl mb-6">البوّابة إلى كل ما هو مجهول وغامض.</p>
+      <a href="https://www.youtube.com/@Mawaraiyat?sub_confirmation=1"
+         class="px-6 py-3 bg-cyan-500 hover:bg-cyan-600 rounded-full font-semibold">
+        اشترك الآن
+      </a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-4 md:px-20">
+    <h2 class="text-3xl font-bold mb-6 text-center">عن القناة</h2>
+    <p class="leading-8 text-lg text-center max-w-3xl mx-auto">
+      نغطس أسبوعيًا في أسئلة نص الليل: ألغاز علمية، أسرار الكون، وظواهر ما وراء الطبيعة،
+      ونفكّ شفرتها بلغة بسيطة تحترم فضولك.
+    </p>
+  </section>
+
+  <!-- Latest Episode -->
+  <section id="latest" class="bg-gray-800 py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-8">أحدث حلقة</h2>
+    <div class="flex justify-center">
+      <iframe class="w-full max-w-2xl aspect-video rounded-lg"
+              src="https://www.youtube.com/embed?listType=user_uploads&list=Mawaraiyat"
+              title="Latest Episode" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Topics -->
+  <section id="topics" class="py-16 px-4 md:px-20">
+    <h2 class="text-3xl font-bold text-center mb-10">الموضوعات</h2>
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <!-- مثال كارت -->
+      <a href="https://youtube.com/playlist?list=PLxxx"
+         class="bg-gray-800 p-6 rounded-xl hover:ring-2 ring-cyan-500 transition">
+        <img src="icons/space.svg" class="w-16 h-16 mb-4 mx-auto" alt="">
+        <h3 class="text-xl font-semibold mb-2 text-center">ألغاز الفضاء</h3>
+      </a>
+      <!-- كرّر للكروت الأخرى -->
+    </div>
+  </section>
+
+  <!-- Social / Footer -->
+  <footer class="bg-gray-800 py-10 text-center space-y-4">
+    <div class="space-x-3 rtl:space-x-reverse">
+      <a href="https://instagram.com/Mawaraiyat" target="_blank"><img src="icons/insta.svg" class="inline w-7"></a>
+      <a href="https://tiktok.com/@Mawaraiyat" target="_blank"><img src="icons/tiktok.svg" class="inline w-7"></a>
+      <a href="https://x.com/Mawaraiyat" target="_blank"><img src="icons/x.svg" class="inline w-7"></a>
+    </div>
+    <p class="text-sm opacity-70">© <span id="year"></span> Mawaraiyat. جميع الحقوق محفوظة.</p>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </footer>
+
+</body>
+</html>
